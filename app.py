@@ -31,5 +31,5 @@ def analyze():
         return jsonify({"error": f"Agent error: {msg}"}), 500
 
 if __name__ == "__main__":
-    print("🌙 Dream Analyzer running at http://localhost:5000")
-    app.run(debug=True, port=5000)
+    print("🌙 Dream Analyzer running at http://0.0.0.0:5000")
+    app.run(host="0.0.0.0", port=5000, debug=False)
